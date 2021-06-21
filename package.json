@@ -1,6 +1,6 @@
 {
   "name": "vue-vditor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "bwrong<ibwrong@foxmail.com>",
   "license": "MIT",
   "keywords": [
@@ -30,19 +30,31 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/BWrong/auth-tool.git",
+  "homepage": "https://github.com/BWrong/vue-vditor.git",
   "bugs": {
-    "url": "https://github.com/BWrong/auth-tool.git/issues",
+    "url": "https://github.com/BWrong/vue-vditor.git/issues",
     "email": "ibwrong@foxmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BWrong/auth-tool.git"
+    "url": "https://github.com/BWrong/vue-vditor.git"
   },
   "engines": {
     "node": ">=12"
   },
   "dependencies": {
+    "vue-demi": "latest"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-beta.1",
+    "vue": "^2.0.0 || >=3.0.0-rc.0",
+    "nanoid": "~3.1.23",
+    "vditor": "~3.8.5"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/node": "^15.12.3",
@@ -55,19 +67,7 @@
     "vue": "^3.0.5",
     "vue-tsc": "^0.0.24",
     "vditor": "^3.8.5",
-    "nanoid": "^3.1.23",
-    "vue-demi": "^0.9.1"
-  },
-  "peerDependencies": {
-    "@vue/composition-api": "^1.0.0-beta.1",
-    "vue": "^2.0. 0 || ^3.0.0",
-    "nanoid": "~3.1.23",
-    "vditor":"~3.8.5"
-  },
-  "peerDependenciesMeta": {
-    "@vue/composition-api": {
-      "optional": true
-    }
+    "nanoid": "^3.1.23"
   },
   "config": {
     "commitizen": {
