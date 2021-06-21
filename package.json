@@ -1,0 +1,82 @@
+{
+  "name": "vue-vditor",
+  "version": "0.0.1",
+  "author": "bwrong<ibwrong@foxmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "vue",
+    "vditor",
+    "editor"
+  ],
+  "description": "基于vditor实现的vue版本的markdown编辑器",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "release": "npm run build && standard-version --infile CHANGELOG.md "
+  },
+  "main": "./lib/vue-vditor.umd.js",
+  "module": "./lib/vue-vditor.es.js",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": "./lib/vue-vditor.es.js",
+      "require": "./lib/vue-vditor.umd.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/BWrong/auth-tool.git",
+  "bugs": {
+    "url": "https://github.com/BWrong/auth-tool.git/issues",
+    "email": "ibwrong@foxmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BWrong/auth-tool.git"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.3",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "rollup-plugin-dts": "^3.0.2",
+    "standard-version": "^9.3.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.7",
+    "vue": "^3.0.5",
+    "vue-tsc": "^0.0.24",
+    "vditor": "^3.8.5",
+    "nanoid": "^3.1.23",
+    "vue-demi": "^0.9.1"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-beta.1",
+    "vue": "^2.0. 0 || ^3.0.0",
+    "nanoid": "~3.1.23",
+    "vditor":"~3.8.5"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "standard-version": {
+    "skip": {
+      "commit": false
+    }
+  }
+}
