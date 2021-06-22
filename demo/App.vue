@@ -29,7 +29,6 @@ const contentStr = ref('# 这是一个MarkDown编辑器\n![](https://gitee.com/l
 let vueEditor: Vditor | null = null;
 
 function handleAfter(editor: Vditor) {
-  console.log(editor);
   vueEditor = editor;
 }
 function handleMethod(method: string) {

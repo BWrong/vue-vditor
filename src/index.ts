@@ -1,8 +1,8 @@
-import { App,Plugin } from 'vue'
-import EditorComponent from './index.vue'
+import { App, Plugin } from 'vue-demi';
+import EditorComponent from './index.vue';
 // export const VueVditor = EditorComponent;
 export default {
   install(Vue: App) {
-    Vue.component('VueVditor',EditorComponent)
+    Vue.component('VueVditor', EditorComponent);
   }
-} as Plugin
+} as Plugin;
