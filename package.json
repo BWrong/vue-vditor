@@ -1,6 +1,6 @@
 {
   "name": "vue-vditor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "bwrong<ibwrong@foxmail.com>",
   "license": "MIT",
   "keywords": [
@@ -16,15 +16,15 @@
     "serve": "vite preview",
     "release": "npm run build && standard-version --infile CHANGELOG.md "
   },
-  "main": "./lib/vue-vditor.umd.js",
-  "module": "./lib/vue-vditor.es.js",
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.es.js",
   "files": [
     "lib"
   ],
   "exports": {
     ".": {
-      "import": "./lib/vue-vditor.es.js",
-      "require": "./lib/vue-vditor.umd.js"
+      "import": "./lib/index.es.js",
+      "require": "./lib/index.umd.js"
     }
   },
   "publishConfig": {
