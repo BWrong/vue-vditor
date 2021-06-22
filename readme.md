@@ -25,7 +25,8 @@
 ### 使用方法
 #### 安装
 ```shell
-npm install -S vue-vditor vditor
+# Vue3 不用安装 @vue/composition-api
+npm install -S vue-vditor vditor @vue/composition-api
 ```
 #### 使用
 ```js
