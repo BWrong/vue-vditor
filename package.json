@@ -1,6 +1,6 @@
 {
   "name": "vue-vditor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "bwrong<ibwrong@foxmail.com>",
   "license": "MIT",
   "keywords": [
@@ -46,10 +46,9 @@
     "vue-demi": "latest"
   },
   "peerDependencies": {
-    "@vue/composition-api": "^1.0.0-beta.1",
-    "vue": "^2.0.0 || >=3.0.0-rc.0",
-    "nanoid": "~3.1.23",
-    "vditor": "~3.8.5"
+    "@vue/composition-api": "^1.0.0-beta.10",
+    "vditor": "~3.8.5",
+    "vue": "^2.0.0 || >=3.0.0-rc.0"
   },
   "peerDependenciesMeta": {
     "@vue/composition-api": {
@@ -60,14 +59,14 @@
     "@types/node": "^15.12.3",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
-    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "standard-version": "^9.3.0",
     "typescript": "^4.3.2",
-    "vite": "^2.3.7",
-    "vue": "^3.0.5",
-    "vue-tsc": "^0.0.24",
     "vditor": "^3.8.5",
-    "nanoid": "^3.1.23"
+    "vite": "^2.3.7",
+    "vite-plugin-vue2": "^1.6.2",
+    "vue": "^3.1.1",
+    "vue-tsc": "^0.0.24"
   },
   "config": {
     "commitizen": {
