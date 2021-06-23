@@ -27,10 +27,8 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['vue-demi','vditor','vue'],
-      // plugins: [],
       output: {
         banner,
-        // exports: 'auto',
         //sourcemap: true,
         globals: {
           'vue-demi': 'VueDemi',

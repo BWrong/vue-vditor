@@ -8,7 +8,7 @@
 
 一款基于[vditor](https://b3log.org/vditor/)实现的vue版本的markdown编辑器，支持在Vue2.0和Vue3.0中使用。
 
-![](https://gitee.com/letwrong/Picture/raw/master/20210622175627.png)
+![](https://gitee.com/letwrong/Picture/raw/master/20210623092516.png)
 
 [Vditor预览地址](https://ld246.com/guide/markdown)
 
