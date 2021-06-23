@@ -26,12 +26,13 @@ export default defineConfig({
       fileName: 'index'
     },
     rollupOptions: {
-      external: ['vue-demi','vditor','vue'],
+      external: ['vue-demi','vditor','vue','@vue/composition-api'],
       output: {
         banner,
         //sourcemap: true,
         globals: {
           'vue-demi': 'VueDemi',
+          '@vue/composition-api': 'VueCompositionAPI',
           vue: 'Vue',
           vditor: 'Vditor'
         }
